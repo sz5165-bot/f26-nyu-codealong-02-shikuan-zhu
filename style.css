@@ -1,0 +1,159 @@
+/* === RESET === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === PAGE STYLING === */
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f0f0f0;
+}
+
+/* === FLEX CONTAINER === */
+.container {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  min-height: 300px;
+  padding: 1rem;
+}
+
+/* === FLEX ITEMS (BOXES) === */
+.box {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.box:nth-child(1) { background: #e06c75; }
+.box:nth-child(2) { background: #61afef; }
+.box:nth-child(3) { background: #98c379; }
+.box:nth-child(4) { background: #e5c07b; }
+.box:nth-child(5) { background: #c678dd; }
+
+/* ============================================================
+   🧪 FLEXBOX PLAYGROUND — STEP BY STEP
+   ============================================================
+   Follow along with your instructor.
+   Uncomment each block one at a time and change the values.
+   Refresh your browser after each change to see what happens!
+
+   💡 Keyboard shortcut to comment / uncomment a line:
+        Mac:  Cmd + /
+        PC:   Ctrl + /
+   Select a line or block and tap the shortcut to toggle.
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   STEP 1 — Turn on Flexbox
+   ------------------------------------------------------------
+   Uncomment the block below. The boxes should snap from
+   stacked vertically to sitting side-by-side.
+   ------------------------------------------------------------ */
+
+
+/* .container {
+  display: flex;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 2 — Change the Direction
+   ------------------------------------------------------------
+   Now uncomment this block. Try each value:
+       row  |  row-reverse  |  column  |  column-reverse
+   ------------------------------------------------------------ */
+
+
+/* .container {
+  flex-direction: row;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 3 — Distribute Along the Main Axis
+   ------------------------------------------------------------
+   Uncomment and try:
+       flex-start  |  center  |  flex-end
+       space-between  |  space-around  |  space-evenly
+   ------------------------------------------------------------ */
+
+
+/* .container {
+  justify-content: center;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 4 — Align Along the Cross Axis
+   ------------------------------------------------------------
+   Uncomment and try:
+       stretch  |  flex-start  |  center  |  flex-end
+   ------------------------------------------------------------ */
+
+
+/* .container {
+  align-items: center;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 5 — Wrap When There's No Room
+   ------------------------------------------------------------
+   Shrink your browser window so the boxes are squeezed.
+   Then uncomment and try:  nowrap  |  wrap
+   ------------------------------------------------------------ */
+
+
+/* .container {
+  flex-wrap: wrap;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 6 — Add Space Between Boxes
+   ------------------------------------------------------------
+   Uncomment and try different pixel values: 10px  20px  40px
+   ------------------------------------------------------------ */
+
+
+/* .container {
+  gap: 16px;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 7 — Grow Boxes to Fill the Space
+   ------------------------------------------------------------
+   Uncomment below — all boxes will grow equally.
+   Then change one box's value to 2 or 3 to see it grab
+   more of the extra space.
+   ------------------------------------------------------------ */
+
+
+/* .box {
+  flex-grow: 1;
+} */
+
+
+/* ------------------------------------------------------------
+   STEP 8 — Move One Box on Its Own
+   ------------------------------------------------------------
+   The first box has class "special". Uncomment and try:
+       flex-start  |  center  |  flex-end  |  stretch
+   ------------------------------------------------------------ */
+
+
+/* .special {
+  align-self: flex-end;
+} */

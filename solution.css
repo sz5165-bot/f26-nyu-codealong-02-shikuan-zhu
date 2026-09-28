@@ -1,0 +1,55 @@
+/* === RESET === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === PAGE STYLING === */
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f0f0f0;
+}
+
+/* === FLEX CONTAINER === */
+.container {
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 8px;
+  min-height: 300px;
+  padding: 1rem;
+
+  /* --- Flexbox properties (all active) --- */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* === FLEX ITEMS (BOXES) === */
+.box {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 6px;
+  flex-grow: 1;
+}
+
+.box:nth-child(1) { background: #e06c75; }
+.box:nth-child(2) { background: #61afef; }
+.box:nth-child(3) { background: #98c379; }
+.box:nth-child(4) { background: #e5c07b; }
+.box:nth-child(5) { background: #c678dd; }
+
+/* === INDIVIDUAL OVERRIDE === */
+.special {
+  align-self: flex-end;
+}
